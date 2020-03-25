@@ -1,4 +1,4 @@
-<p align="center">##o2hAdmin</p>
+<p align="center">## o2hAdmin</p>
 
 ## Installation
 
@@ -7,6 +7,7 @@
 - Update database credentials in env file.
 - php artisan migrate
 - php artisan db:seed
+- php artisan storage:link
 
 ## Contact
 
