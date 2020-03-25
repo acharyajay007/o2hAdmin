@@ -44,7 +44,10 @@
                                             <td>
                                                 <a class="btn btn-primary" href="{{route('employees.edit',[$c->id])}}">Edit</a>
                                                 <a class="btn btn-warning" href="{{route('employees.show',[$c->id])}}">View</a>
-
+                                                {{ Form::open(array('url' => 'employees/' . $c->id, 'style' => 'display:inline')) }}
+                                                    {{ Form::hidden('_method', 'DELETE') }}
+                                                    {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
+                                                {{ Form::close() }}
                                             </td>
                                         </tr>
                                     @endforeach
